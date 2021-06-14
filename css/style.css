@@ -1,0 +1,420 @@
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+div.top{
+    z-index:9000;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: #0c2340;
+    color: white;
+    box-shadow: 0 1px 10px black;
+}
+
+a.left{
+    padding: 14px 16px;
+    float: left;
+    text-decoration: none;
+    color: inherit;
+}
+
+form{
+    margin: 2cm auto;
+    padding: 20px;
+    width: 30%;
+    border: solid 1px;
+    text-align: center;
+}
+
+.box{
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.login{
+    background-color: lightblue;
+    border: none;
+    padding: 20px;
+}
+
+.login:hover{
+    cursor: pointer;
+    background-color: rgb(114, 192, 218);
+}
+
+
+ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.heritage{
+    list-style-type: square;
+}
+
+.drop{
+    background-color: #0c2340;
+    border: none;
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: serif;
+}
+
+ul a.top {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section.desc{
+    display:block;
+    margin:auto;
+    padding: 10px;
+    font-family: 'Montserrat';
+    background-color: rgb(235, 235, 235);
+}
+
+section.center{
+    width:80%;
+    margin-left:10%;margin-right:10%;
+}
+
+section.bot{
+    color: white;
+    background-color: #0c2340;
+    padding: 20px;
+}
+
+th{
+    width: 50%;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+td.contact{
+    padding: 0px 30px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family: 'Montserrat';
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: none;
+    background-color: #f1f1f1;
+    width: 20%;
+    height: 350px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    text-decoration: none;
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    overflow: auto;
+    background-color: #e8f2ff;
+    color: #333333;
+    float: left;
+    padding: 0px 12px;
+    width: 80%;
+    border:none;
+    height: 350px;
+    display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Grid Layout*/
+.grid-container {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    background-color: rgba(255, 191, 191, 0.8);
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.grid-item2 {
+    background-color: lightblue;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+}
+.grid-item p{
+    font-size: 15px;
+}
+
+.stud{
+    padding: 20px;
+    border-radius: 10px;
+    width:300px;
+    height:300px; 
+    float:right;
+}
+
+.studentright{
+    color:red;
+    text-align: right;
+    padding: 10px;
+}
+
+.studentleft{
+    color:red;
+    text-align: left;
+    padding: 10px;
+}
+
+section.student{
+    overflow: hidden;
+    color: black;
+    background-color: #DAEAFF;
+}
+
+.awardTitle{
+    text-align:center;
+    color:#0c2340;
+}
+
+.awardPic{
+    width:300px;
+    height:400px; 
+}
+
+.awardPicContainer{
+    margin-bottom: 25px;
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(17, 63, 94);
+    max-width: 300px;
+}
+
+/*hao*/
+p{
+    font-family: 'Montserrat';
+    line-height: 1.75;
+}
+h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #CC0000;
+    font-weight: lighter;
+}
+h4{
+    color: #CC0000;
+}
+/*image in programme*/
+.imgProg {
+    display: block;
+    margin: 0%;
+}
+/*list style in programme */
+.ulProg{
+    list-style: square;
+}
+/*style table in research*/
+.rsT{
+    border-collapse: collapse;
+    margin-left: 20%;
+    margin-right: 20%;
+    width:auto;
+    border: 1px solid #ddd;
+    line-height: 2;
+}
+.rsT th{
+    text-align: center;
+    border: 1px solid #ddd !important;
+    padding: 10px;
+    background-color: #f0fcff;
+}
+.rsT td{
+    text-align: justify;
+    border: 1px solid #ddd !important;
+    padding: 10px;
+}
+.progcontent {
+    overflow: auto;
+    background-color: #f0fcff;
+    color: rgb(39, 39, 39);
+    float: left;
+    padding: 0px 12px;
+    border: none;
+    width: 80%;
+    border-left: none;
+    height: 320px;
+    display: none;
+}
+.grid-containerstaff{
+    margin: auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-itemsstaff{
+    padding: 10px;
+    max-width: 350px;
+    background-color: lightblue;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.staffpic{
+    width: 300px;
+    height: 300px;
+}
+.h4black{
+    color: #333333;
+}
